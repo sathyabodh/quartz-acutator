@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "2.0.23",
     "cz-conventional-changelog": "^3.0.2"
   },
   "scripts": {
