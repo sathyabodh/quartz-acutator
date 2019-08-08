@@ -7,7 +7,6 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
-    "@commitlint/prompt": "^8.1.0",
     "commitizen": "^4.0.3",
     "conventional-changelog-cli": "2.0.23",
     "cz-conventional-changelog": "^3.0.2"
@@ -28,8 +27,7 @@
   "homepage": "https://github.com/sathyabodh/quartz-acutator#readme",
   "config": {
     "commitizen": {
-      #"path": "./node_modules/cz-conventional-changelog"
-      "path": "@commitlint/prompt"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }

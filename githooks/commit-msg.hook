@@ -1,0 +1,11 @@
+#! /bin/sh
+npx commitlint < $1
+status=$?
+echo "Result $status"
+if [ $status -gt 0 ]
+then
+	echo "Commit message does not follow conventional commit message spec"
+	echo 'Please use "git-cz" instead of "git commit" command to format commit message according to conventional commit message spec'
+fi
+exit $status 
+
