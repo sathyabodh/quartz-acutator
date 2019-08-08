@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+                  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<article>
+  <articleinfo>
+    <title></title>
+  </articleinfo>
+<para>
+  [[quartz]] = Quartz
+</para>
+<para>
+  Quartz actuator provides end points for managing jobs and triggers
+</para>
+<para>
+  [[quartz-jobs]] == Quartz Job (<literal>quartz-jobs</literal>)
+</para>
+<para>
+  The <literal>quartz-jobs</literal> endpoint provides access to
+  application's quartz jobs
+</para>
+<para>
+  [[pause-job]] === Pause Job To pause particular job, make a
+  <literal>POST</literal> request to
+  <literal>/actuator/quartz-jobs/{group}/{name}/pause</literal> as shown
+  in the following curl-based example:
+</para>
+<para>
+  include::{snippets}/quartz-jobs/named/job/pause/curl-request.adoc[]
+</para>
+<para>
+  [[resume-job]] === Resume Job To resume particular job, make a
+  <literal>POST</literal> request to
+  <literal>/actuator/quartz-jobs/{group}/{name}/resume</literal> as
+  shown in the following curl-based example:
+</para>
+<para>
+  include::{snippets}/quartz-jobs/named/job/resume/curl-request.adoc[]
+</para>
+<para>
+  [[pause-jobgroup]] === Pause Job group To pause particular job group,
+  make <literal>POST</literal> request to
+  <literal>/actuator/quartz-jobs/{group}</literal> as shown in the
+  following curl-based example:
+</para>
+<para>
+  include::{snippets}/quartz-jobs/named/jobgroup/pause/curl-request.adoc[]
+</para>
+</article>

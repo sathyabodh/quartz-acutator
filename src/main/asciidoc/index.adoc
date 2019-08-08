@@ -1,0 +1,10 @@
+:doctype: book
+:toc: left
+:toclevels: 4
+:source-highlighter: prettify
+:numbered:
+:icons: font
+:hide-uri-scheme:
+:docinfo: shared,private
+
+include::endpoints/quartz.adoc[leveloffset=+1]

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.sathyabodh.actuator.autoconfigure.cache.CachesEndPointAutoConfiguration,\
+org.sathyabodh.actuator.autoconfigure.quartz.QurtzJobEndPointAutoConfiguration,\
+org.sathyabodh.actuator.autoconfigure.quartz.QuartzTriggerEndPointAutoConfiguration

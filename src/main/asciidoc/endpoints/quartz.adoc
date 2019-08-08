@@ -1,0 +1,113 @@
+[[quartz]]
+= Quartz
+
+Quartz actuator provides end points for managing jobs and triggers
+
+[[quartz-jobs]]
+== Quartz Job (`quartz-jobs`)
+The `quartz-jobs` endpoint provides access to application's quartz jobs
+
+[[list-job]]
+=== Retrieving jobs
+To retrieve jobs, make `GET` request to `/actuator/quartz-jobs` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/list/curl-request.adoc[]
+
+The resulting response is similar to the following:
+
+include::{snippets}/quartz-jobs/list/http-response.adoc[]
+
+[[list-job-query-parameter]]
+==== Query parameter
+Jobs listing can be further filtered using `group` and `name` query parameter.The following table shows the supported query parameters:
+
+[cols="2,4"]
+include::{snippets}/quartz-jobs/list/request-parameters.adoc[]
+
+[[list-job-response-structure]]
+==== Response Structure
+The response contains the details of the jobs managed by quartz.The following table describes
+the structure of the response:
+
+[cols="3,1,3"]
+include::{snippets}/quartz-jobs/list/response-fields.adoc[]
+
+[[job-detail]]
+=== Retrieving Job details
+To retrieve job details with trigger information, make GET request to `/actuator/quartz-jobs/{group}/{name}` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/named/jobdetails/curl-request.adoc[]
+
+[[job-detail-response-structure]]
+==== Response Structure
+The response contains details about the job and its associated triggers. The following table describes the structure of the response:
+
+[cols="3,1,3"]
+include::{snippets}/quartz-jobs/named/jobdetails/response-fields.adoc[]
+
+[[pause-job]]
+=== Pause Job
+To pause particular job, make a `POST` request to `/actuator/quartz-jobs/{group}/{name}/pause` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/named/job/pause/curl-request.adoc[]
+
+
+[[resume-job]]
+=== Resume Job
+To resume particular job, make a `POST` request to `/actuator/quartz-jobs/{group}/{name}/resume` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/named/job/resume/curl-request.adoc[]
+
+[[pause-jobgroup]]
+=== Pause Job group
+To pause particular job group, make `POST` request to `/actuator/quartz-jobs/{group}` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/named/jobgroup/pause/curl-request.adoc[]
+
+[[resume-jobgroup]]
+=== Resume Job group
+To resume particular job group, make `POST` request to `/actuator/quartz-jobs/{group}` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/named/jobgroup/resume/curl-request.adoc[]
+
+[[quartz-triggers]]
+== Quartz Triggers (`quartz-triggers`)
+The `quartz-triggers` endpoint provides access to application's quartz triggers
+
+[[list-triggers]]
+=== Retrieving Triggers
+To retrieve triggers, make `GET` request to `/actuator/quartz-triggers` as shown in the following curl-based example:
+
+include::{snippets}/quartz-jobs/list/curl-request.adoc[]
+
+The resulting response is similar to the following:
+
+include::{snippets}/quartz-triggers/list/http-response.adoc[]
+
+[[list-trigger-query-parameter]]
+==== Query parameter
+Triggers listing can be further filtered using `group` and `name` query parameter.The following table shows the supported query parameters:
+
+[cols="2,4"]
+include::{snippets}/quartz-triggers/list/request-parameters.adoc[]
+
+[[list-trigger-response-structure]]
+==== Response Structure
+The response contains the details of the triggers managed by quartz.The following table describes
+the structure of the response:
+
+[cols="3,1,3"]
+include::{snippets}/quartz-triggers/list/response-fields.adoc[]
+
+[[pause-trigger]]
+=== Pause Trigger
+To pause particular trigger, make a `POST` request to `/actuator/quartz-triggers/{group}/{name}/pause` as shown in the following curl-based example:
+
+include::{snippets}/quartz-triggers/named/trigger/pause/curl-request.adoc[]
+
+
+[[resume-trigger]]
+=== Resume Trigger
+To resume particular trigger, make a `POST` request to `/actuator/quartz-triggers/{group}/{name}/resume` as shown in the following curl-based example:
+
+include::{snippets}/quartz-triggers/named/trigger/resume/curl-request.adoc[]
