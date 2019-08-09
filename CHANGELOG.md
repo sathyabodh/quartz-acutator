@@ -1,7 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/sathyabodh/quartz-acutator/compare/v1.1.0...v1.1.1) (2019-08-09)
+
+
+### Bug Fixes
+
+* formatted changelog ([7c54a83](https://github.com/sathyabodh/quartz-acutator/commit/7c54a83))
 
 ## 1.1.0 (2019-08-08)
 
