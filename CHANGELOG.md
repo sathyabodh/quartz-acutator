@@ -1,15 +1,13 @@
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-### [1.1.1](https://github.com/sathyabodh/quartz-acutator/compare/v1.1.0...v1.1.1) (2019-08-09)
+## [1.1.1](https://github.com/sathyabodh/quartz-acutator/compare/v1.1.0...v1.1.1) (2019-08-09)
 
 
 ### Bug Fixes
 
 * formatted changelog ([7c54a83](https://github.com/sathyabodh/quartz-acutator/commit/7c54a83))
 
-## 1.1.0 (2019-08-08)
+
+
+# [1.1.0](https://github.com/sathyabodh/quartz-acutator/compare/930e211...v1.1.0) (2019-08-08)
 
 
 ### Bug Fixes
@@ -24,3 +22,6 @@ All notable changes to this project will be documented in this file. See [standa
 * changed the version of the project ([1a3129c](https://github.com/sathyabodh/quartz-acutator/commit/1a3129c))
 * maven pom file with all required dependencies ([c36e03c](https://github.com/sathyabodh/quartz-acutator/commit/c36e03c))
 * **(quartz):** implement quartz endpoint for spring boot acutator ([ebaf195](https://github.com/sathyabodh/quartz-acutator/commit/ebaf195)), closes [#2](https://github.com/sathyabodh/quartz-acutator/issues/2)
+
+
+
