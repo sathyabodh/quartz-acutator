@@ -13,3 +13,7 @@ cp githooks/commit-msg.hook .git/hooks/commit-msg
 
 chmod +x .git/hooks/commit-msg
 
+echo "Setting commit message template"
+
+git config commit.template COMMIT_MSG_TEMPLATE
+
